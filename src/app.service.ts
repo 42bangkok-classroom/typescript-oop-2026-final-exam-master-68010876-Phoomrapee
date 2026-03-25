@@ -1,13 +1,12 @@
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-
-export interface ApiResponse<T> {
+  export interface ApiResponse<T> {
   success: boolean;
   data: T | null;
   message: string;
 }
-export class AppService {
+  export class AppService {
   getHello(): string {
     return 'Hello NestJS';
   }
